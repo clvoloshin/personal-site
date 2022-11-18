@@ -78,9 +78,14 @@ export default function About({ children }) {
              My current favorite cocktail: Last Word
             </p>
 
-            <p>
-              Interested in chatting about Reinforcement Learning, engineering or new interests to explore? Contact me! 
-            </p>
+            
+              <p>
+              Interested in chatting about Reinforcement Learning, 
+                engineering or new interests to explore?
+                <br />
+              <em style={{"fontWeight":"bold"}}>Contact:</em> cvoloshin [at] caltech [dot] edu
+              </p>
+            
           </div>
         </div>
 
