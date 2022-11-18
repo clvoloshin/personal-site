@@ -1,16 +1,16 @@
 import React from "react"
 import { useState } from "react"
-import { useEffect } from "react"
-import Layout from "../components/Layout"
+// import { useEffect } from "react"
+// import Layout from "../components/Layout"
 import '../styles/global.css'
 import '../styles/bootstrap-icons.css'
 import { graphql, useStaticQuery } from "gatsby"
-import Isotope from "isotope-layout"
+// import Isotope from "isotope-layout"
 // import Popup from 'reactjs-popup';
 // import 'reactjs-popup/dist/index.css';
 import '../styles/popup.css';
 import Modal from "react-modal";
-import {  StaticImage } from "gatsby-plugin-image"
+// import {  StaticImage } from "gatsby-plugin-image"
 
 const Research = () => {
   
@@ -35,7 +35,7 @@ const Research = () => {
 
   const projects = data.allMarkdownRemark.nodes
   
-  const [isotope, setIsotope] = useState(null);
+  // const [isotope, setIsotope] = useState(null);
   // state for storing the filter keyword, with an initial value of *, which matches everything
   const [filterKey, setFilterKey] = useState('*');
   const [activeKey, setActiveKey] = useState("");
@@ -120,9 +120,9 @@ const Research = () => {
           {/* <div class="filter-container " style={{"position": "relative", "height":"auto"}}> */}
           <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
-            <li class={'*' == filterKey ? "active-link" : ""} onClick={() => {handleFilterKeyChange('*')}}>All</li>
-            <li class={'ope' == filterKey ? "active-link" : ""} onClick={() => {handleFilterKeyChange('ope')}}>Evaluation</li>
-            <li class={'cpl' == filterKey ? "active-link" : ""} onClick={() => {handleFilterKeyChange('cpl')}}>Learning</li>
+            <li class={'*' === filterKey ? "active-link" : ""} onClick={() => {handleFilterKeyChange('*')}}>All</li>
+            <li class={'ope' === filterKey ? "active-link" : ""} onClick={() => {handleFilterKeyChange('ope')}}>Evaluation</li>
+            <li class={'cpl' === filterKey ? "active-link" : ""} onClick={() => {handleFilterKeyChange('cpl')}}>Learning</li>
           </ul>
         </div>
       </div>
@@ -134,7 +134,7 @@ const Research = () => {
            <div class={"filter-item ".concat(project.frontmatter.category.map(category => category).join(' '))} > {/* style={{"display":"flex", "flexDirection":"row", "paddingBottom": "10px"}} */}
            <div class="portfolio-wrap">
               <div style={{"maxWidth":"300px", "objectFit":"scale-down"}}>
-              {!project.frontmatter.image_or_movie.endsWith('.mov') && <img src={project.frontmatter.image_or_movie} class="img-fluid" alt="" style={{"border": "4px solid #1f5297" }} onLoad={() => setLoaded(true)}></img>}  {/* {loaded ? {} : { "display": 'none' }} */}
+              {!project.frontmatter.image_or_movie.endsWith('.mov') && <img src={project.frontmatter.image_or_movie} class="img-fluid" alt="" style={{"border": "4px solid #1f5297" }}></img>}  {/*onLoad={() => setLoaded(true)} {loaded ? {} : { "display": 'none' }} */}
               {project.frontmatter.image_or_movie.endsWith('.mov') && <video autoPlay muted loop={true} style={{"border": "4px solid #1f5297" }}><source src={project.frontmatter.image_or_movie} ></source></video>}
               </div>
              <div class="portfolio-links" style={{"maxWidth":"300px"}}>

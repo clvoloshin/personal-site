@@ -48,7 +48,7 @@ export default function useScroll(start) {
      */
     let navbarlinks = select('#navbar .scrollto', true)
     const navbarlinksActive = () => {
-        let position = window.scrollY + 100
+        let position = window.scrollY + 300
         navbarlinks.forEach(navbarlink => {
         if (!navbarlink.hash) return
         let section = select(navbarlink.hash)
@@ -105,7 +105,6 @@ export default function useScroll(start) {
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
-
       let body = select('body')
       if (body.classList.contains('mobile-nav-active')) {
         body.classList.remove('mobile-nav-active')
