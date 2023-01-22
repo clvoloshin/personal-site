@@ -7,7 +7,15 @@ image_or_movie: ./research/LCP/pacman.gif
 pdf: ./research/LCP/LCP_full_paper.pdf
 category: [cpl]
 official_link: 
-bibtex: "Stay Tuned"
+bibtex: "@inproceedings{
+    voloshin2022policy,
+    title={Policy Optimization with Linear Temporal Logic Constraints},
+    author={Cameron Voloshin and Hoang Minh Le and Swarat Chaudhuri and Yisong Yue},
+    booktitle={Advances in Neural Information Processing Systems},
+    editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+    year={2022},
+    url={https://openreview.net/forum?id=yZcPRIZEwOG}
+    }"
 authors: "Cameron Voloshin, Hoang Le, Swarat Chaudhuri, Yisong Yue @ NeurIPS"
 abstract: "We study the problem of policy optimization (PO) with linear temporal logic (LTL) constraints. The language of LTL allows flexible description of tasks that may be unnatural to encode as a scalar cost function. We consider LTL-constrained PO as a systematic framework, decoupling task specification from policy selection, and as an alternative to the standard of cost shaping. With access to a generative model, we develop a model-based approach that enjoys a sample complexity analysis for guaranteeing both task satisfaction and cost optimality (through a reduction to a reachability problem). Empirically, our algorithm can achieve strong performance even in low-sample regimes."
 ---

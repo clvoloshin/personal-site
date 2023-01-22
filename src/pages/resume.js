@@ -38,7 +38,7 @@ export default function Resume() {
             {/* <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> */}
           </div>
           <div class="resume-item">
-            <h4>B.S in Applied & Compuational Mathematics</h4>
+            <h4>B.S in Applied & Computational Mathematics</h4>
             <h5>2013 - 2017</h5>
             <p><em>California Institute of Technology, Pasadena, CA</em></p>
             {/* <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> */}
