@@ -3,7 +3,7 @@ title: Eventual Discounting Temporal Logic Counterfactual Experience Replay
 slug: lcer
 conference: ICML
 date: 2023-05-01T00:00:00+00:00
-image_or_movie: ./research/LCER/lcer.png
+image_or_movie: ./research/LCER/carlo.gif
 pdf: ./research/LCER/LCER_full_paper.pdf
 category: [cpl]
 official_link: 
